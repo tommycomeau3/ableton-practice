@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Abril+Fatface&family=Merriweather:ital@0;1&family=Outfit:wght@300;400;700&family=Work+Sans:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500&display=swap');
+
+/* Resetting some default styles for all elements */
+* {
+    margin: 0;
+    font-family: 'AR One Sans', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 900;
+}
+
+/* Set background color */
+body {
+    background-color: #fff;
+}
+
+header {
+    display: flex; /* flexible layout */
+    justify-content: space-between; /* sets space between a tags and logo */
+    width: 100%;
+    padding: 2.5px 40px; /* Sets padding of top/bottom to 20px and left/right to 100px */
+    align-items: center; /* Centering items vertically within the header */
+    z-index: 100;
+    border-bottom: 2px solid #D3D3D3;
+}
+
+.left-nav {
+    text-decoration: none; /* Removing underline for links */
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.left-nav a {
+    margin-right: 35px;
+    position: relative;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+.right-nav a, i {
+    position: relative;
+    font-size: 18px;
+    color: black;
+    text-decoration: none; /* Removing underline for links */
+    margin-left: 35px; /* Adding margin between links */
+}
+
+.right-nav i {
+    font-size: 25px;
+    display: none;
+}
+
+.symbol {
+    position: relative;
+    height: 65px;
+    margin-right: 35px;
+}
+
+#orange {
+    color: #ff764d;
+}
+
+#blue {
+    color: #0000ff;
+}
+
+.about{
+    padding: 20px 40px; 
+}
+
+.about a {
+    margin-right: 20px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+.worker {
+    width: 80%;
+    height: auto;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+}
+
+
+.info {
+    text-align: left;
+}
+
+.paragraph-one {
+    padding: 10% 25%;
+    padding-bottom: 2.5%;
+    font-size: 25px;
+}
+
+.paragraph-two{
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 10%;
+    font-weight: 10;
+    font-size: 14;
+    line-height: 2;
+}
+
+.code {
+    height: 450px;
+    width: auto;
+    position: absolute;
+    z-index: 200;
+    left: 5%;
+    padding-right: 50px;
+}
+
+.desk {
+    height: 350px;
+    width: auto;
+    position: absolute;
+    z-index: 100;
+}
+
+.yellow-box {
+    height: 850px;
+    width: 850px;
+    background-color: #fbffa7;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wens {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 400px;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1400px){
+    .code {
+        height: 400px;
+        /*left: 40px;*/
+    }
+}
+
+@media (max-width: 1300px) {
+    .symbol {
+        height: 55px;
+    }
+
+    .right-nav a, .left-nav a {
+        font-size: 14px;
+    }
+
+    .paragraph-one, .paragraph-two {
+        font-size: 20px;
+    }
+
+    .code {
+        height: 400px;
+        /*left: 50px;*/
+    }
+
+    .yellow-box {
+        height: 800px;
+        width: 800px;
+    }
+
+    .desk {
+        height: 300px;
+    }
+}
+
+@media (max-width: 1200px){
+    .paragraph-one, .paragraph-two {
+        font-size: 15px;
+    }
+
+    .code {
+        height: 350px;
+        /*left: 40px;*/
+    }
+
+    .yellow-box {
+        height: 750px;
+        width: 750px;
+    }
+
+    .desk {
+        height: 250px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .right-nav i {
+        display: block;
+    }
+
+    .right-nav a, .left-nav a{
+        display: none;
+    }
+
+    .symbol {
+        font-size: 16px;
+    }
+
+    .paragraph-one, .paragraph-two {
+        font-size: 12px;
+    }
+
+    .code {
+        height: 300px;
+        /*left: 20px;*/
+    }
+
+    .desk {
+        height: 200px;
+    }
+
+    .yellow-box {
+        height: 700px;
+        width: 700px;
+    }
+}
